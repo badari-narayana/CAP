@@ -17,10 +17,7 @@ class Solution
                 for(Integer neighbour:adj.get(cur)){
                     if(!visited[neighbour]){
                         ans.add(neighbour);
-                        ArrayList<Integer> x=adj.get(cur);
-                        for(int j=0;j<x.size();j++){
-                            queue.add(x.get(j));
-                        }
+                        queue.add(neighbour);
                         visited[neighbour]=true;
                     }
                 }
